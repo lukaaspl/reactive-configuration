@@ -13,10 +13,12 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [],
+  plugins: ["react-hooks"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
   settings: {
     react: {
